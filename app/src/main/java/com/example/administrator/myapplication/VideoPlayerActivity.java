@@ -165,9 +165,8 @@ public class VideoPlayerActivity extends Activity  implements SurfaceHolder.Call
                     WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
     }
-
     @Override
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
-
+        mMediaPlayer.stop();
     }
 }
